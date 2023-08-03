@@ -1,27 +1,18 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
-  <Estudiante/>
-  <GuardarEstudiante/>
-  <ActualizarEstudiante/>
-  <EliminarEstudiante/>
+  <NavBar />
+  <router-view/>
 </template>
 
 <script>
-import Estudiante from './modules/estudiante/pages/ConsultaEstudiante.vue'
-import GuardarEstudiante from './modules/estudiante/pages/GuardaEstudiante.vue'
-import ActualizarEstudiante from './modules/estudiante/pages/ActualizarEstudiante.vue'
-import EliminarEstudiante from './modules/estudiante/pages/EliminarEstudiante.vue'
-
+import NavBar from './modules/estudiante/components/NavBar.vue'
 
 export default {
   name: 'App',
   components: {
-    Estudiante,
-    GuardarEstudiante,
-    ActualizarEstudiante,
-    EliminarEstudiante
-  }
+    NavBar
+  },
 }
 </script>
 
