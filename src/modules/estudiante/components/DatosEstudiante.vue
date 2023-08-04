@@ -23,7 +23,8 @@ import { obtenerEstudianteFachada } from "../helpers/EstudianteCliente.js"
 export default {
     data() {
         return {
-            cedula: null,
+            cedula: this.$route.params.cedula,
+            //cedula: null,
             nombre: null,
             apellido: null
 
@@ -37,6 +38,19 @@ export default {
             console.log(data)
         },
     },
+    mounted() {
+        const { cedula } = this.$route.params;
+        console.log(this.$route);
+        const ciu= this.$route.query.ciudad;
+        const {ciudad} =this.$route.query
+        console.log(ciu);
+        console.log(ciudad);
+        console.log(cedula);
+        this.cedula = cedula;
+        this.consultarEstudiante();
+        
+    },
+
 };
 </script>
 

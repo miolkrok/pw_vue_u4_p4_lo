@@ -29,7 +29,7 @@ export default {
         };
     },
     methods: {
-        async guardarEstudiante() {
+        guardarEstudiante() {
             const data={
                 cedula:this.cedula,
                 nombre:this.nombre,
@@ -37,6 +37,7 @@ export default {
                 provincia:"Pichincha"
             }
             ingresarEstudianteFachada(data);
+            console.log('Estudiante insertado')
         },
     },
 };

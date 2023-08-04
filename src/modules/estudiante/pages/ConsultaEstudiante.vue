@@ -7,7 +7,7 @@ import DatosEstudiante from '../components/DatosEstudiante.vue'
 export default {
     components:{
         DatosEstudiante
-    }
+    },
 }
 </script>
 
