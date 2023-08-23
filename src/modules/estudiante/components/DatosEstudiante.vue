@@ -4,7 +4,7 @@
         <div class="input-container">
             <label for="cedula">Cédula</label>
             <input v-model="cedula" type="text" id="cedula">
-            <button @click="consultarEstudiante">Consultar</button>
+            <button type="button" class="btn btn-secondary" @click="consultarEstudiante">Consultar</button>
         </div>
         <div class="input-container">
             <label for="nombre">Nombre</label>

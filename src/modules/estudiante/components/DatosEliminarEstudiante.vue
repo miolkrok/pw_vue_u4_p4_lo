@@ -5,7 +5,7 @@
       <label for="id">ID</label>
       <input v-model="id" type="text" id="id">
     </div>
-    <button @click="eliminarEstudiante">Eliminar</button>
+    <button type="button" class="btn btn-outline-danger" @click="eliminarEstudiante">Eliminar</button>
   </div>
 </template>
 

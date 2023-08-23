@@ -17,7 +17,7 @@
       <label for="apellido">Apellido</label>
       <input v-model="apellido" type="text" id="apellido">
     </div>
-    <button @click="actualizarEstudiante">Actualizar</button>
+    <button type="button" class="btn btn-outline-success" @click="actualizarEstudiante">Actualizar</button>
   </div>
 </template>
 
